@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.teamandroidangel.iamangelauditor.numbershapes.MainActivity">
+
+    <TextView
+        android:id="@+id/numberShapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#B0BEC5"
+        android:text="@string/number_shapes"
+        android:textColor="#263238"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/text_Instruction"
+        android:textSize="15sp"
+        android:layout_marginRight="@dimen/marginright"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textInstruction"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/enterNumber" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_number"
+        android:background="#B0BEC5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/enterNumber"
+        android:layout_marginTop="50dp"
+        android:onClick="checkNumber"
+        android:id="@+id/checkNumberId" />
+
+</RelativeLayout>
